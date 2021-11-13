@@ -30,7 +30,7 @@ jobs:
       - name: Build before publishing
         run: corepack yarn run build
       - name: Publish to NPM
-        if: no
+        if: false
         run: corepack yarn workspaces foreach --no-private npm publish --access public --tolerate-republish
       - name: Merge PR
         id: merge
@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Abort if PR merging failed
-        if: ${{ steps.merge.outputs.sha }} == ""
+        if: ${{ steps.merge.outputs.sha == '' }}
         run: exit 1
       - name: Create tags
         run: |
