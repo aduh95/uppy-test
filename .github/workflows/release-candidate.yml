@@ -8,6 +8,7 @@ jobs:
     name: Publish releases
     runs-on: ubuntu-latest
     steps:
+      - run: echo '[${{ toJSON(github.actor) }}]'
       - name: Checkout sources
         uses: actions/checkout@v2
         with:
