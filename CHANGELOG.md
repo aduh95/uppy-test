@@ -12,6 +12,46 @@ Please add your entries in this format:
 
 In the current stage we aim to release a new version at least every month.
 
+## 2.2.4
+
+Released: 2021-11-14
+
+| Package | Version | Package | Version |
+| - | - | - | - |
+| @uppy/aws-s3 | 2.0.6 | @uppy/provider-views | 2.0.6 |
+| @uppy/aws-s3-multipart | 2.1.2 | @uppy/react | 2.1.2 |
+| @uppy/box | 1.0.5 | @uppy/robodog | 2.1.4 |
+| @uppy/companion | 3.1.2 | @uppy/screen-capture | 2.0.5 |
+| @uppy/companion-client | 2.0.4 | @uppy/status-bar | 2.1.2 |
+| @uppy/core | 2.1.3 | @uppy/store-default | 2.0.3 |
+| @uppy/dashboard | 2.1.2 | @uppy/thumbnail-generator | 2.0.6 |
+| @uppy/drag-drop | 2.0.5 | @uppy/transloadit | 2.0.5 |
+| @uppy/dropbox | 2.0.5 | @uppy/tus | 2.1.2 |
+| @uppy/facebook | 2.0.5 | @uppy/unsplash | 2.0.4 |
+| @uppy/file-input | 2.0.5 | @uppy/url | 2.0.5 |
+| @uppy/golden-retriever | 2.0.6 | @uppy/utils | 4.0.4 |
+| @uppy/google-drive | 2.0.5 | @uppy/webcam | 2.0.5 |
+| @uppy/image-editor | 1.0.5 | @uppy/xhr-upload | 2.0.6 |
+| @uppy/instagram | 2.0.5 | @uppy/zoom | 1.0.5 |
+| @uppy/locales | 2.0.4 | uppy | 2.2.4 |
+| @uppy/onedrive | 2.0.5 | - | - |
+
+- website: Update /support and docs about Transloadit-hosted Companion (Artur Paikin / #3243)
+- @uppy/aws-s3,@uppy/box,@uppy/core,@uppy/dashboard,@uppy/drag-drop,@uppy/dropbox,@uppy/facebook,@uppy/file-input,@uppy/google-drive,@uppy/image-editor,@uppy/instagram,@uppy/locales,@uppy/onedrive,@uppy/screen-capture,@uppy/status-bar,@uppy/thumbnail-generator,@uppy/transloadit,@uppy/url,@uppy/webcam,@uppy/xhr-upload,@uppy/zoom: Refactor locale scripts & generate types and docs (Merlijn Vos / #3276)
+- @uppy/companion: Remove references of incorrect `options` argument for `companion.socket` (Mikael Finstad / #3307)
+- @uppy/companion: Upgrade linting to 2.0.0-0 (Kevin van Zonneveld / #3280)
+- @uppy/robodog: Release uppy@2.1.2, @uppy/robodog@2.1.3 (Murderlon)
+- @uppy/core: @uppy/core@2.1.2 (Murderlon)
+- meta: update version references in docs (Murderlon)
+- @uppy/robodog: Release @uppy/robodog@2.1.2 (Murderlon)
+- @uppy/unsplash: @uppy/unsplash@2.0.3 (Murderlon)
+- @uppy/aws-s3: use `Promise.allSettled` insead of custom utils (Antoine du Hamel / #3079)
+- @uppy/core: Convert sets to arrays prior to using spread operator to enable transpilation to ES5 (John Adair / #3297)
+- @uppy/webcam: Add showRecordingLength to webcam types (Merlijn Vos / #3303)
+- @uppy/dashboard: Required meta fields UI (Artur Paikin / #3285)
+- meta: Update BACKLOG.md (Merlijn Vos)
+
+
 ## 2.2.1
 
 Released: 2021-10-14
