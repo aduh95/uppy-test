@@ -1,4 +1,4 @@
-# [Uppy](https://uppy.io)
+# [Uppy-test](https://uppy.io)
 
 <img src="https://uppy.io/images/logos/uppy-logo-2019.svg" width="120" alt="Uppy logo: a superman puppy in a pink suit" align="right">
 
