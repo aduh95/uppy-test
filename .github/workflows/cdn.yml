@@ -54,6 +54,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Remove release-candidate branch
         run: gh api -X DELETE repos/${{ github.repository }}/git/refs/${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Remove release branch
+        run: gh api -X DELETE repos/${{ github.repository }}/git/refs/release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Get Uppy version number
         id: uppyVersion
         run: jq -r '"##[set-output name=version;]"+.version' < packages/uppy/package.json
