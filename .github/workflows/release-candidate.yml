@@ -4,10 +4,13 @@ on:
     branches: release
 
 jobs:
-  release:
+  prepare-release:
     name: Prepare release candidate Pull Request
     runs-on: ubuntu-latest
     steps:
+      - run: echo "$JSON"
+        env:
+          JSON: ${{ toJSON(github) }}
       - name: Checkout sources
         uses: actions/checkout@v2
         with:
